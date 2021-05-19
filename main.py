@@ -16,12 +16,19 @@ extensions = {
     "Videos":    ['.mp4', '.mov', '.avi']
 }
 
+locations = extensions.keys()
+
 while True:
     fileList = os.listdir(DOWNLOADSPATH)
 
     if fileList:
         for file in fileList:
-            pass
-            # Check extension of file and sort accordingly.
+            ext = file[file.rfind('.'):]
+
+            for location in locations:
+                if ext in extensions[location]:
+                    # move to location
+                else:
+                    pass
 
     time.sleep(queryDelay)
