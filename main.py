@@ -6,8 +6,8 @@ import time
 queryDelay = 1
 
 documentsExt = []
-picturesExt = []
 musicExt = []
+picturesExt = []
 videosExt = []
 
 while True:
