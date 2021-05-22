@@ -27,7 +27,7 @@ while True:
 
             for location in locations:
                 if ext in extensions[location]:
-                    # move to location
+                    os.replace(f"{DOWNLOADSPATH}/{file}", f"/home/{USER}/{location}/{file}")
                 else:
                     pass
 
